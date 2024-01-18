@@ -131,7 +131,7 @@ public:
 
 int main()
 {
-    Quadratic equation(1, -15, 56);
+    Quadratic equation(1, -1, 6);
     Coefficient coefficient;
     ComplexRoots roots;
 
@@ -146,14 +146,14 @@ int main()
 
     // Example of real and unequal roots
     equation1.GetCoefficient(&coefficient1);
-    equation1.SetCoefficient(1, -5, 6);
+    equation1.SetCoefficient(1, -1, -12);
     equation1.QuadraticRoots(&roots1);
 
     printCoefficients(&coefficient1);
     equation1.WriteRoots(&roots1);
 
     // Example of complex roots
-    equation2.SetCoefficient(2, 2, 2);
+    equation2.SetCoefficient(1, -2, 10);
     equation2.GetCoefficient(&coefficient2);
     equation2.QuadraticRoots(&roots2);
 
@@ -161,7 +161,7 @@ int main()
     equation2.WriteRoots(&roots2);
 
     // Example of real and equal roots
-    equation3.SetCoefficient(1, -6, 9);
+    equation3.SetCoefficient(1, 4, 4);
     equation3.GetCoefficient(&coefficient3);
     equation3.QuadraticRoots(&roots3);
 
