@@ -131,7 +131,7 @@ public:
 
 int main()
 {
-    Quadratic equation(1, -1, 6);
+    Quadratic equation(1, -4, 40);
     Coefficient coefficient;
     ComplexRoots roots;
 
