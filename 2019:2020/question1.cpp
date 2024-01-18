@@ -23,6 +23,7 @@ enum RootType
     REAL_DIFFERENT,
     IMAGINARY
 };
+
 // he did not ask for this function. I just added it to make the code more readable
 void printCoefficients(Coefficient *coefficients)
 {
