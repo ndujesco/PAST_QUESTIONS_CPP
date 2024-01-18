@@ -96,8 +96,12 @@ public:
     {
         complex<float> determinant = CalcDeterminant();
 
-        roots->root1 = (-(*coefficients).FirstOrderCoeff + sqrt(determinant)) / (2 * (*coefficients).SecondOrderCoeff);
-        roots->root2 = (-(*coefficients).FirstOrderCoeff - sqrt(determinant)) / (2 * (*coefficients).SecondOrderCoeff);
+        float a = (*coefficients).SecondOrderCoeff;
+        float b = (*coefficients).FirstOrderCoeff;
+        float c = (*coefficients).ConstantCoeff;
+
+        roots->root1 = (-b + sqrt(determinant)) / (2 * a);
+        roots->root2 = (-b - sqrt(determinant)) / (2 * a);
     }
 
     void WriteRoots(ComplexRoots *roots)
