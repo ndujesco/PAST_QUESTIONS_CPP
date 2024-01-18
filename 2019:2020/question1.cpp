@@ -23,7 +23,7 @@ enum RootType
     REAL_DIFFERENT,
     IMAGINARY
 };
-
+// he did not ask for this function. I just added it to make the code more readable
 void printCoefficients(Coefficient *coefficients)
 {
     cout << "\nThe equation is of the form ax^2 + bx + c. The coeficients are:\n"
