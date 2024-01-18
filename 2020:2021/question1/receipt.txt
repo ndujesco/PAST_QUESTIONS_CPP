@@ -1,0 +1,17 @@
+*****************************************************************************************
+                                       Yem Yem Ltd
+                               University of Lagos, Akoka
+
+Customer              Ronke Ahmed
+PhoneNumber           08026684078
+
+Your Order
+
+ProductName           Unit Price            Quantity Ordered
+                      50                    5
+                                            ********
+                      Total Price           250
+                                            ********
+
+                                Thanks for your patronage
+*****************************************************************************************
