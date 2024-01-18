@@ -94,10 +94,10 @@ private:
 public:
     void QuadraticRoots(ComplexRoots *roots)
     {
-        float determinant = CalcDeterminant();
+        complex<float> determinant = CalcDeterminant();
 
-        roots->root1 = (-(*coefficients).FirstOrderCoeff + sqrt(complex<float>(determinant))) / (2 * (*coefficients).SecondOrderCoeff);
-        roots->root2 = (-(*coefficients).FirstOrderCoeff - sqrt(complex<float>(determinant))) / (2 * (*coefficients).SecondOrderCoeff);
+        roots->root1 = (-(*coefficients).FirstOrderCoeff + sqrt(determinant)) / (2 * (*coefficients).SecondOrderCoeff);
+        roots->root2 = (-(*coefficients).FirstOrderCoeff - sqrt(determinant)) / (2 * (*coefficients).SecondOrderCoeff);
     }
 
     void WriteRoots(ComplexRoots *roots)
