@@ -5,11 +5,9 @@
 #include <string>
 #include <iomanip>
 
-#include "header.h" 
+#include "header.h"
 
 using namespace std;
-
-
 
 void FillShoppingInfo(Person &person)
 {
@@ -49,7 +47,7 @@ void WriteReceipt(Person person)
 {
     ofstream receiptFile;
 
-    string asterisk = "*****************************************************************************************";
+    string asterisk = "******************************************************************************************";
     string address = person.shop.Address;
     string thanks = "Thanks for your patronage";
     string shopName = person.shop.ShopName;

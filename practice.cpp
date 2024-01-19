@@ -3,8 +3,8 @@
 using namespace std;
 
 void increase(int);
+void increase_(int &);
 void increaseByPointer(int *);
-void increaseByReference(int &);
 
 int main()
 {
@@ -17,7 +17,7 @@ int main()
     cout << a << endl
          << endl;
 
-    increaseByReference(b);
+    increase_(b);
     cout << b << endl
          << endl;
 
@@ -40,8 +40,8 @@ void increaseByPointer(int *a)
     cout << *a << endl;
 }
 
-void increaseByReference(int &a)
+void increase_(int &num)
 {
-    a++;
-    cout << a << endl;
+    num++;
+    cout << num << endl;
 }
